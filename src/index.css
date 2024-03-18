@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "21026";
+  src: url(../public/21026.otf); 
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brand-logo {
+  font-family: "21026";
+}
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+}
+
+.background-pic {
+  background-image: url("../public/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.white-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-black {
+  color: black;
+}
+
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.input-field input[type=search] {
+  border: none;
+  padding-left: 2%;
+  width: 98%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-input-placeholder {
+  color: #606060;
+}
+
+.search-btn {
+  position: absolute;
+  top: 4px;
+  right: 0.5rem;
+}
+
+label:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.card {
+  border-radius: 1rem;
+  max-height: 480px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+.card-image {
+  height: 300px;
+  width: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+  font-family: "Helvetica Neue", "Helvetica";
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.margin-bottom {
+  padding-bottom: 0.5rem;
+}
+
+.no-result {
+  width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.nothing {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
+}
+
+.nothing-small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+
+.footer-copyright {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.visa {
+  text-align: end;
+}
